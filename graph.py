@@ -5,4 +5,6 @@ from graph_module import *
 file = input('Enter measurement name: ')
 
 ds_1, ds_2 = load_data(file)
-height, deformation = get_data(ds_2)
+steps = get_steps_count(ds_1)
+deformation = get_deformation(ds_2, steps)
+
